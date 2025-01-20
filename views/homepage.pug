@@ -6,3 +6,13 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body    
         h1 Custom Object table
+        table 
+            tr 
+                th HS ID
+                th Video Game 
+                th Role
+                    tr 
+                    each game in data
+                        td #{game.id}
+                        td #{game.properties.video_game_name}
+                        td #{game.properties.role}
